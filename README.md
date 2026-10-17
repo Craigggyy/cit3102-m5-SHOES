@@ -120,43 +120,43 @@ The following screenshots demonstrate the API requests and their HTTP response s
 
 ### Screenshot 1: User Registration — 201 Created
 
-![User Registration](screenshots/01-register.png)
+![User Registration](1.jpg)
 
 ### Screenshot 2: User Login — 200 OK
 
-![User Login](screenshots/02-login.png)
+![User Login](2.jpg)
 
 ### Screenshot 3: Get All Shoes Without a Token — 401 Unauthorized
 
-![Unauthorized Request](screenshots/03-unauthorized.png)
+![Unauthorized Request](3.jpg)
 
 ### Screenshot 4: Get All Shoes With a Token — 200 OK
 
-![Get All Shoes](screenshots/04-get-all-shoes.png)
+![Get All Shoes](4.jpg)
 
 ### Screenshot 5: Create a Shoe — 201 Created
 
-![Create Shoe](screenshots/05-create-shoe.png)
+![Create Shoe](5.jpg)
 
 ### Screenshot 6: Validation Error — 422 Unprocessable Entity
 
-![Validation Error](screenshots/06-validation-error.png)
+![Validation Error](6.jpg)
 
 ### Screenshot 7: Get Shoe by ID — 200 OK
 
-![Get Shoe by ID](screenshots/07-get-shoe.png)
+![Get Shoe by ID](7.jpg)
 
 ### Screenshot 8: Shoe Not Found — 404 Not Found
 
-![Shoe Not Found](screenshots/08-not-found.png)
+![Shoe Not Found](8.jpg)
 
 ### Screenshot 9: Update Shoe — 200 OK
 
-![Update Shoe](screenshots/09-update-shoe.png)
+![Update Shoe](9.jpg)
 
 ### Screenshot 10: Delete Shoe — 204 No Content
 
-![Delete Shoe](screenshots/10-delete-shoe.png)
+![Delete Shoe](10.jpg)
 
 ## 5. Why Does DELETE Return 204 Instead of 200?
 
