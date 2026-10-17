@@ -3,8 +3,8 @@
 **Course:** CIT3102  
 **Project:** Build Your Own API  
 **Resource:** Shoe  
-**Partner 1:** Pasia, Del Ashley T. 
-**Partner 2:** Keh, Astherton B.
+**Partner 1:** Pasia, Del Ashley T.  
+**Partner 2:** Keh, Astherton B.  
 **Section:** IT3E
 
 ---
@@ -35,12 +35,12 @@ Each shoe record contains the following fields:
 
 **Step 1: Clone the repository**
 
+Replace `YOUR-USERNAME` with the GitHub username that owns the repository.
+
 ```bash
 git clone https://github.com/YOUR-USERNAME/cit3102-m5-shoe.git
-cd shoes-api
+cd cit3102-m5-shoe
 ```
-
-Replace `YOUR-USERNAME` with the GitHub username that owns the repository.
 
 **Step 2: Install dependencies**
 
@@ -49,8 +49,6 @@ composer install
 ```
 
 **Step 3: Create the environment file**
-
-Copy `.env.example` and rename the copy to `.env`.
 
 On Windows PowerShell, run:
 
@@ -66,7 +64,7 @@ php artisan key:generate
 
 **Step 5: Configure the database**
 
-Configure the database settings in `.env` to match the project's actual database configuration. Create the database if required.
+Configure the database settings in `.env` to match the project's database configuration. Create the database if required.
 
 **Step 6: Run database migrations**
 
@@ -118,7 +116,7 @@ All shoe endpoints require a valid Sanctum bearer token.
 
 ## 4. API Testing Screenshots
 
-The following screenshots demonstrate the API requests and their expected HTTP response status codes. Each screenshot should show the request method, endpoint, response, and status code in Bruno.
+The following screenshots demonstrate the API requests and their HTTP response status codes. Each screenshot should show the request method, endpoint, response, and status code in Bruno.
 
 ### Screenshot 1: User Registration — 201 Created
 
@@ -163,4 +161,3 @@ The following screenshots demonstrate the API requests and their expected HTTP r
 ## 5. Why Does DELETE Return 204 Instead of 200?
 
 HTTP status code 204 means that a request was successful and there is no response body to return. When a shoe is deleted, the server can confirm that the deletion was completed without sending the deleted shoe record back to the client. A 200 status code can also indicate success, but it is commonly used when the server returns a response body. Using 204 is appropriate when the client only needs confirmation that the shoe was deleted.
-
